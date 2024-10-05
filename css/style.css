@@ -1,0 +1,126 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.692);
+}
+
+header #logo {
+  height: 100px;
+  background: black url(../assets/logo-p.png) center no-repeat;
+  background-size: contain;
+  margin: 0 0 -14px; 
+}
+
+header p {
+  background-color: none;
+  color: #D1D0D1;
+  font-weight: 700;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  margin: 0 auto 8px;
+}
+
+header #nav {
+  list-style: none;
+  display: flex;
+  padding: 8px;
+}
+
+#nav li {
+  margin-right: 10px;
+}
+
+#nav li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: white;
+  transition: color 0.2s ease-in-out;
+}
+
+#nav li a:active {
+  color: gray;
+}
+
+main {
+  padding: 16px;
+  margin: 12px 0 32px;
+}
+
+main h1 {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 1.6em;
+  margin-bottom: 32px;
+}
+
+#desafio {
+  font-size: 0.8em;
+}
+
+#selecionado {
+  background-color: rgba(112, 128, 144, 0.274);
+  margin: 0 -16px 12px;
+  border-bottom: 1px solid;
+  text-indent: 16px;
+}
+
+#selecionado::before {
+  content: '#';
+}
+
+#objetivo {
+  margin-bottom: 8px;
+}
+
+#resultado {
+  border-bottom: 1px solid;
+  margin: 0 -16px;
+  text-indent: 16px;
+  padding-bottom: 8px;
+}
+
+
+#objetivo::before {
+  content: 'Objetivo: ';
+}
+
+#resultado::before {
+  content: 'Resultado: ';
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: .6em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: underline;
+  color: white;
+}
+
+footer a:active {
+  text-decoration: none;
+  color: gray;
+}
