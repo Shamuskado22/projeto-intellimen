@@ -45,7 +45,7 @@ header p {
   left: 0;
   background-color: black;
   width: 100%;
-  border-bottom: 2px solid rgba(128, 128, 128, 0.549);
+  border-bottom: 2px solid rgb(128, 128, 128);
   transition: all 0.3s ease-in-out;
 }
 
@@ -65,16 +65,8 @@ header p {
   color: gray;
 }
 
-.home {
-  border-top: 2px solid rgba(128, 128, 128, 0.549);
-  padding-top: 4px;
-}
-
-.desafios {
-  border-top: 2px solid rgba(128, 128, 128, 0.549);
-  padding-top: 4px;
-}
-
+.home,
+.desafios,
 .sobre {
   border-top: 2px solid rgba(128, 128, 128, 0.549);
   padding-top: 4px;
@@ -101,7 +93,7 @@ main h1 {
 
 #selecionado {
   background-color: rgba(112, 128, 144, 0.274);
-  margin: 0 -16px 12px;
+  margin: 0 -16px 0;
   border-bottom: 1px solid;
   text-indent: 16px;
 }
@@ -110,15 +102,16 @@ main h1 {
   content: "• ";
 }
 
-#objetivo {
-  margin-bottom: 8px;
-}
-
-#resultado {
+#container {
   border-bottom: 1px solid;
   margin: 0 -16px;
-  text-indent: 16px;
-  padding-bottom: 8px;
+  padding: 8px 16px;
+  display: none;
+}
+
+#objetivo,
+#resultado {
+  margin-bottom: 8px;
 }
 
 #objetivo::before {

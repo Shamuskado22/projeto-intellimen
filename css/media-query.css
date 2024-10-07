@@ -35,13 +35,6 @@
     font-size: 0.9em;
   }
 
-  #selecionado:first-child {
-    border-radius: 5px 5px 0 0;
-  }
-  #selecionado:last-child {
-    border-radius: 0 0 5px 5px;
-  }
-
   footer {
     font-size: 0.7em;
   }
