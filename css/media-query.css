@@ -1,0 +1,70 @@
+@media (min-width: 768px) {
+  #logo {
+    height: 160px;
+    background: #000002 url(../assets/logo-g.jpg) center no-repeat;
+    background-size: contain;
+    margin: 0 0 -24px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  header p {
+    font-size: 0.9em;
+  }
+
+  #nav li {
+    margin-right: 24px;
+  }
+
+  #nav li a {
+    font-size: 1em;
+  }
+
+  #nav li a:hover {
+    color: gray;
+  }
+
+  main {
+    width: 80vw;
+  }
+
+  main h1 {
+    font-size: 1.6em;
+  }
+
+  #desafio {
+    font-size: 0.9em;
+  }
+
+  #selecionado:first-child {
+    border-radius: 5px 5px 0 0;
+  }
+  #selecionado:last-child {
+    border-radius: 0 0 5px 5px;
+  }
+
+  footer {
+    font-size: 0.7em;
+  }
+}
+
+@media (min-width: 992px) {
+  #nav li a {
+    font-size: 1.2em;
+  }
+
+  main {
+    width: 60vw;
+  }
+
+  main h1 {
+    font-size: 1.7em;
+  }
+
+  #desafio {
+    font-size: 1em;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+}

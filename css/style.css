@@ -33,6 +33,7 @@ header p {
   font-size: 0.6em;
   text-transform: uppercase;
   margin: 0 auto 8px;
+  transition: all 0.3s ease-in-out;
 }
 
 #nav {
@@ -45,6 +46,7 @@ header p {
   background-color: black;
   width: 100%;
   border-bottom: 2px solid rgba(128, 128, 128, 0.549);
+  transition: all 0.3s ease-in-out;
 }
 
 #nav li {
@@ -63,17 +65,34 @@ header p {
   color: gray;
 }
 
+.home {
+  border-top: 2px solid rgba(128, 128, 128, 0.549);
+  padding-top: 4px;
+}
+
+.desafios {
+  border-top: 2px solid rgba(128, 128, 128, 0.549);
+  padding-top: 4px;
+}
+
+.sobre {
+  border-top: 2px solid rgba(128, 128, 128, 0.549);
+  padding-top: 4px;
+}
+
 main {
   padding: 16px;
-  margin: 12px 0 32px;
+  margin: 12px auto 32px;
+  transition: all 0.3s ease-in-out;
 }
 
 main h1 {
   text-align: center;
   text-transform: uppercase;
   text-decoration: underline;
-  font-size: 1.6em;
+  font-size: 1.4em;
   margin-bottom: 32px;
+  transition: all 0.3s ease-in-out;
 }
 
 #desafio {
@@ -89,10 +108,6 @@ main h1 {
 
 #selecionado::before {
   content: "• ";
-}
-
-#seleciondo::after {
-  content: "> ";
 }
 
 #objetivo {
@@ -120,6 +135,7 @@ footer {
   text-align: center;
   font-size: 0.6em;
   padding: 4px;
+  transition: all 0.3s ease-in-out;
 }
 
 footer a {
