@@ -10,6 +10,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 header {
@@ -46,6 +47,7 @@ header p {
   background-color: black;
   width: 100%;
   border-bottom: 2px solid rgb(128, 128, 128);
+  z-index: 1;
   transition: all 0.3s ease-in-out;
 }
 
@@ -89,29 +91,71 @@ main h1 {
 
 #desafio {
   font-size: 0.8em;
+  margin: 0 -16px 0;
 }
 
-#selecionado {
+.selecionado {
   background-color: rgba(112, 128, 144, 0.274);
-  margin: 0 -16px 0;
+  width: 100%;
+  padding: 4px;
+  border: none;
   border-bottom: 1px solid;
   text-indent: 16px;
+  text-align: left;
+  font-size: 1.5em;
+  font-family: "Opens Sans", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
 }
 
-#selecionado::before {
-  content: "• ";
+.selecionado:active {
+  background-color: rgb(112, 128, 144);
 }
 
-#container {
-  border-bottom: 1px solid;
+.selecionado:focus {
+  background-color: rgb(112, 128, 144);
+}
+
+.selecionado .span {
+  font-size: 0.9em;
+  width: 15px;
+  margin: 0 4px -2px 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.girar {
+  transform: rotate(90deg);
+}
+
+.container {
+  background-color: white;
   margin: 0 -16px;
   padding: 8px 16px;
   display: none;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.ativo {
+  display: block;
+  animation: slideIn 0.3s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 #objetivo,
-#resultado {
-  margin-bottom: 8px;
+#resultado,
+p {
+  margin: 0 16px 8px;
 }
 
 #objetivo::before {
@@ -140,3 +184,4 @@ footer a:active {
   text-decoration: none;
   color: gray;
 }
+
