@@ -2,7 +2,7 @@
 
 ### **Descrição**
 
-Este projeto web tem como objetivo acompanhar o progresso de um indivíduo nos desafios do programa Intellimen. A aplicação permite ao usuário visualizar informações sobre cada desafio, marcar como concluído e acompanhar seu desenvolvimento ao longo do tempo.
+Este projeto web tem como objetivo acompanhar o progresso de um indivíduo nos desafios do Projeto Intellimen. A aplicação permite ao usuário visualizar informações sobre cada desafio e acompanhar seu desenvolvimento ao longo do tempo.
 
 ### **Funcionalidades**
 
