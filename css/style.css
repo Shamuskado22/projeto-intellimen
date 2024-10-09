@@ -89,6 +89,16 @@ main h1 {
   transition: all 0.3s ease-in-out;
 }
 
+#index {
+  font-size: 0.8em;
+  text-indent: 20px;
+  line-height: 20px;
+}
+
+#sobre {
+  font-size: 0.9em;
+}
+
 #desafio {
   font-size: 0.8em;
   margin: 0 -16px 0;
@@ -160,10 +170,12 @@ p {
 
 #objetivo::before {
   content: "Objetivo: ";
+  font-weight: 700;
 }
 
 #resultado::before {
   content: "Resultado: ";
+  font-weight: 700;
 }
 
 footer {
