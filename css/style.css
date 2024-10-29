@@ -39,7 +39,6 @@ header p {
 
 #nav {
   list-style: none;
-  display: flex;
   padding: 8px;
   position: sticky;
   top: 0;
@@ -49,6 +48,10 @@ header p {
   border-bottom: 2px solid rgb(128, 128, 128);
   z-index: 1;
   transition: all 0.3s ease-in-out;
+}
+
+#nav ul {
+  display: flex;
 }
 
 #nav li {
