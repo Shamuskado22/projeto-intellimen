@@ -70,9 +70,7 @@ header p {
   color: gray;
 }
 
-.home,
-.desafios,
-.sobre {
+.pgselecionada {
   border-top: 2px solid rgba(128, 128, 128, 0.549);
   padding-top: 4px;
 }
