@@ -100,7 +100,7 @@ main h1 {
   font-size: 0.9em;
 }
 
-#desafio {
+.desafio {
   font-size: 0.8em;
   margin: 0 -16px 0;
 }
@@ -118,10 +118,6 @@ main h1 {
   font-weight: 600;
   cursor: pointer;
   transition: background 0.2s ease-in-out;
-}
-
-.selecionado:active {
-  background-color: rgb(112, 128, 144);
 }
 
 .selecionado:focus {
@@ -163,18 +159,18 @@ main h1 {
   }
 }
 
-#objetivo,
-#resultado,
+.objetivo,
+.resultado,
 p {
   margin: 0 16px 8px;
 }
 
-#objetivo::before {
+.objetivo::before {
   content: "Objetivo: ";
   font-weight: 700;
 }
 
-#resultado::before {
+.resultado::before {
   content: "Resultado: ";
   font-weight: 700;
 }
